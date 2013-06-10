@@ -3,7 +3,4 @@
 BOOTPROTO=dhcp
 ONBOOT=yes
 DEVICE=eth<%= options[:interface] %>
-<% if options[:hostname] %>
-DHCP_HOSTNAME=<%= options[:hostname] %>
-<% end %>
 #VAGRANT-END

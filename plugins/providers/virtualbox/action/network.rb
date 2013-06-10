@@ -202,8 +202,7 @@ module VagrantPlugins
         def bridged_network_config(config)
           return {
             :type => :dhcp,
-            :use_dhcp_assigned_default_route => config[:use_dhcp_assigned_default_route],
-            :send_hostname_in_dhcp_request   => config[:send_hostname_in_dhcp_request]  ? config[:send_hostname_in_dhcp_request] : false
+            :use_dhcp_assigned_default_route => config[:use_dhcp_assigned_default_route]
           }
         end
 
